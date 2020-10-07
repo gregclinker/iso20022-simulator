@@ -6,36 +6,4 @@
     <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.10" schemaLocation="pain.001.001.10_1.xsd"/>
     <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.008.001.09" schemaLocation="pain.008.001.09.xsd"/>
 
-    <xs:element name="Pain001Request">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="document" type="pain001:Document"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:element name="Pain001Response">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="document" type="pain001:Document"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:element name="Pain008Request">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="document" type="pain008:Document"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:element name="Pain008Response">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="document" type="pain008:Document"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
 </xs:schema>

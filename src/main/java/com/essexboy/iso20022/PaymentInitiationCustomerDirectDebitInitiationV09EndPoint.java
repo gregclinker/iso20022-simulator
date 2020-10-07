@@ -1,8 +1,6 @@
 package com.essexboy.iso20022;
 
-import essexboy.com.iso20022_web_service.Pain001Response;
-import essexboy.com.iso20022_web_service.Pain008Request;
-import essexboy.com.iso20022_web_service.Pain008Response;
+import iso.std.iso._20022.tech.xsd.pain_008_001.Document;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -10,13 +8,11 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 @Endpoint
 public class PaymentInitiationCustomerDirectDebitInitiationV09EndPoint {
-    private static final String NAMESPACE_URI = "http://com.essexboy/iso20022-web-service";
+    private static final String NAMESPACE_URI = "urn:iso:std:iso:20022:tech:xsd:pain.008.001.09";
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "Pain008Request")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "Document")
     @ResponsePayload
-    public Pain008Response getCountry(@RequestPayload Pain008Request request) {
-        final Pain008Response response = new Pain008Response();
-        response.setDocument(request.getDocument());
-        return response;
+    public Document getCountry(@RequestPayload Document request) {
+        return request;
     }
 }
