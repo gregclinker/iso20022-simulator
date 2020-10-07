@@ -1,6 +1,6 @@
 package com.essexboy.iso20022;
 
-import io.spring.guides.gs_producing_web_service.GetCountryRequest;
+import essexboy.com.iso20022_web_service.GetCountryRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
