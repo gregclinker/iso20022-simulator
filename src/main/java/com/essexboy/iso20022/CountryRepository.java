@@ -1,4 +1,4 @@
-package com.example.producingwebservice;
+package com.essexboy.iso20022;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
