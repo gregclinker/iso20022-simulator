@@ -78,7 +78,8 @@
                 <configuration>
                     <sources>
                         <source>${project.basedir}/src/main/resources/is20022_parent.xsd</source>
-                        <source>${project.basedir}/src/main/resources/pain.001.001.10_1.xsd</source>
+                        <source>${project.basedir}/src/main/resources/pain.002.001.11.xsd</source>
+                        <source>${project.basedir}/src/main/resources/pain.007.001.10.xsd</source>
                         <source>${project.basedir}/src/main/resources/pain.008.001.09.xsd</source>
                     </sources>
                 </configuration>

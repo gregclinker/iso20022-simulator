@@ -12,7 +12,7 @@ public class PaymentInitiationCustomerCreditTransferInitiationV10Endpoint {
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "Document")
     @ResponsePayload
-    public Document getCountry(@RequestPayload Document request) {
+    public Document processPaymant(@RequestPayload Document request) {
         return request;
     }
 }

@@ -1,9 +1,9 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com.essexboy/iso20022-web-service"
-           xmlns:pain001="urn:iso:std:iso:20022:tech:xsd:pain.001.001.10"
-           xmlns:pain008="urn:iso:std:iso:20022:tech:xsd:pain.008.001.09"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://com.essexboy/iso20022-web-service" elementFormDefault="qualified">
 
     <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.001.001.10" schemaLocation="pain.001.001.10_1.xsd"/>
+    <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.002.001.11" schemaLocation="pain.002.001.11.xsd"/>
+    <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.007.001.10" schemaLocation="pain.007.001.10.xsd"/>
     <xs:import namespace="urn:iso:std:iso:20022:tech:xsd:pain.008.001.09" schemaLocation="pain.008.001.09.xsd"/>
 
 </xs:schema>
